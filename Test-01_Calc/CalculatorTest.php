@@ -15,9 +15,17 @@ class CalculatorTest extends TestCase
     {
         $this->calculator = NULL;
     }
+
     public function testAdd()
     {
+        $expect = 3;
         $result = $this->calculator->add(1, 2);
-        $this->assertEquals(3, $result);
+        $this->assertEquals($expect, $result);
+    }
+    public function testSub()
+    {
+        $expect = 22;
+        $result = $this->calculator->sub(4, 2);
+        $this->assertEquals($expect, $result);
     }
 }
