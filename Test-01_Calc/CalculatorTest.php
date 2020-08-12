@@ -24,7 +24,7 @@ class CalculatorTest extends TestCase
     }
     public function testSub()
     {
-        $expect = 22;
+        $expect = 2;
         $result = $this->calculator->sub(4, 2);
         $this->assertEquals($expect, $result);
     }
