@@ -7,15 +7,15 @@ class CalculatorTest extends TestCase
 {
     private $calculator;
 
-    protected function SetUp() : void
+    public function SetUp() : void
     {
         $this->calculator = new Calculator();
     }
-    protected function TearDown() : void
+    public function TearDown() : void
     {
         $this->calculator = NULL;
     }
-    protected function testAdd()
+    public function testAdd()
     {
         $result = $this->calculator->add(1, 2);
         $this->assertEquals(3, $result);
