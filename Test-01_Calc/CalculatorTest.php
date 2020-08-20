@@ -1,6 +1,7 @@
 <?php 
 
 require "Calculator.php";
+
 use \PHPUnit\Framework\TestCase;
 
 class CalculatorTest extends TestCase
@@ -22,6 +23,10 @@ class CalculatorTest extends TestCase
         $result = $this->calculator->add(1, 2);
         $this->assertEquals($expect, $result);
     }
+    // good for testing
+    // !     $expect = 2;
+    // *     $result = $this->calculator->sub(4, 2);
+    // ?     $this->assertEquals($expect, $result);
     public function testSub()
     {
         $expect = 2;
